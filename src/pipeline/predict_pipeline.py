@@ -9,7 +9,7 @@ class PredictPipeline:
         pass
     def predict(self,features):
         try:
-            percent_of_production= float(1)
+            percent_of_production= float(0.02)
             Yield = random.uniform(0.5,1.5)
             #features.Area = features.Area.astype(float)
             features['percent_of_production']=percent_of_production

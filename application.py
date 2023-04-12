@@ -29,7 +29,7 @@ def predict_datapoint():
         pred_df = data.get_data_as_data_frame()
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(features=pred_df)
-        results_out=results[0]/100000000
+        results_out=results[0]
         return render_template('home.html', results=results_out)
 
 
